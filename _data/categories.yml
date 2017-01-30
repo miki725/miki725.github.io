@@ -1,2 +1,5 @@
+- slug: docker
+  name: Docker
+
 - slug: shell
   name: Shell
