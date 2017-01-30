@@ -199,7 +199,7 @@ Its pretty much everything necessary to run site with docker + nginx + LetsEncry
 
 ---
 
-Site Note:
+Side Note:
 
 [LetsEncrypt] is on a mission to encrypt the whole web so if are able to pitch in financially to them, please consider that.
 
