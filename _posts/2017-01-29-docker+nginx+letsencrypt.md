@@ -184,7 +184,12 @@ Above config is btw what I use for my sites which scores `A+` in [SSLTest].
 After a couple of months, the certs can be easily renewed:
 
 {% highlight bash %}
-$ docker run -t --rm -v certs:/etc/letsencrypt -v certs-data:/data/letsencrypt deliverous/certbot renew --webroot --webroot-path=/data/letsencrypt
+$ docker run -t --rm \
+      -v certs:/etc/letsencrypt \
+      -v certs-data:/data/letsencrypt \
+      deliverous/certbot \
+      renew \
+      --webroot --webroot-path=/data/letsencrypt
 $ docker-compose kill -s HUP nginx
 {% endhighlight %}
 
