@@ -9,21 +9,27 @@
     </div>
 
     <ul class="social-links">
+        {% if site.author.keybase %}
+            <a href="https://keybase.io/{{ site.author.keybase }}" class="social-links__entry" target="_blank">
+                <i class="fab fa-keybase"></i>
+            </a>
+        {% endif %}
+
         {% if site.author.github %}
             <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-github"></i>
+                <i class="fab fa-github"></i>
             </a>
         {% endif %}
 
         {% if site.author.twitter %}
             <a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
             </a>
         {% endif %}
 
         {% if site.author.stackoverlow %}
             <a href="https://stackoverflow.com/users/{{ site.author.stackoverlow }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-stack-overflow"></i>
+                <i class="fab fa-stack-overflow"></i>
             </a>
         {% endif %}
     </ul>
