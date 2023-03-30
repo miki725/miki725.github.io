@@ -6,7 +6,8 @@ categories: [docker]
 ---
 
 - TOC
-  {:toc}
+
+{:toc}
 
 In this port Ill share my setup for simple CTF reverse engineering
 which uses the following:
